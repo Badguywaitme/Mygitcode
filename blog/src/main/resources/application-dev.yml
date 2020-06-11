@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-calss-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    root: info
+    com.shier.blog: debug
+  file:
+    path: log/blog-dev.log
